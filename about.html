@@ -8,6 +8,22 @@
 
   </head>
   <body>
+     <div class="wrapper">
+		<div class="header">
+			<div class ="header-content">
+				<div class="logo">
+					<img src="logo.png" width="75" height="75">
+				</div>
+				<ul class="nav-area">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="book.html">Booking</a></li>
+					<li><a href="about.html">About Us</a></li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
     <div class="about-section">
         <h1>About Us </h1>
         <p>Plane to paradise seeks to make the world of travel welcoming to people of all backgrounds and abilities.</p>
@@ -73,6 +89,62 @@ img {
   width: 400px;
   height: 300px;
 }
+        .wrapper{
+	font-family:'Barlow Condensed', sans-serif;
+	z-index: 1;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+}
+.wrapper:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.1);
+	z-index: -1;
+}
+ .header{
+	 width: 100%;
+	 height: 80px;
+	 display: block;
+	}
+.header-content{
+	width: 1000px;
+	height: 100%;
+	display: block;
+	margin: 0 auto ;
+}
+.logo{
+	display: table;
+	float: left;
+	margin-top: 1%;
+}
+ .nav-area{
+	 float: right;
+	 height: 100%;
+ }
+ .nav-area li{
+	 height: 100%;
+	 display: table;
+	 float: left;
+	 padding: 0 20px; 
+ }
+ .nav-area a{
+	 display: table-cell;
+	 vertical-align: middle;
+	 height: 100%;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+ }
+ .nav-area a:hover {
+	color: black;
+	text-decoration: underline;
+	}
 .column {
   float: left;
   width: 33.3%;
