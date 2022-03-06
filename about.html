@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>aboutus</title>   
+   
+
+  </head>
+  <body>
+    <div class="about-section">
+        <h1>About Us </h1>
+        <p>Plane to paradise seeks to make the world of travel welcoming to people of all backgrounds and abilities.</p>
+        
+      </div>
+      
+      <h2 style="text-align:center">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="emily.jpeg">
+            <div class="container">
+              <h2>Emily</h2>
+              <p class="title">CEO & Founder</p>
+              
+              <p>emily@gmail.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="gab.jpeg">
+            <div class="container">
+              <h2>Gabriel</h2>
+              <p class="title">Tourist Guide</p>
+         
+              <p>gabriel@gmail.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="cam.jpeg">
+            <div class="container">
+              <h2>Camille</h2>
+              <p class="title">Marketing Manager</p>
+            
+              <p>camille@gmail.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </body>
+      <style>
+        body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+img {
+  width: 400px;
+  height: 300px;
+}
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color:lightblue;
+  color:black;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+      </style>
+      </html>
